@@ -8,7 +8,7 @@ from log import get_logger
 my_logger = get_logger("DfHelper")
 
 
-class DfHelper():
+class DvcHelper():
 
   def __init__(self):
     pass

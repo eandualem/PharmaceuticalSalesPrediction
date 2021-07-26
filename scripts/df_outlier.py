@@ -57,7 +57,8 @@ class DfOutlier:
       self.df[col] = np.where(self.df[col] < lower, lower, self.df[col])
 
   def getOverview(self) -> None:
-
+    
+    _labels = [column for column in self.df]
     Q1 = self.df.quantile(0.25)
     Q3 = self.df.quantile(0.75)
     IQR = Q3 - Q1
@@ -71,29 +72,28 @@ class DfOutlier:
 
     columns = [
       'label',
+      'number_of_outliers',
+      'percentage_of_outliers',
+      'skew',
       'Q1',
       'median',
       'Q3',
-      'IQR',
-      'skew',
-      'number_of_outliers',
-      'percentage_of_outliers',
       'min_value',
       'max_value',
       'mean', ]
     data = zip(
-      [column for column in self.df],
+      _labels,
+      _outliers,
+      self.percentage(_outliers),
+      _skew,
       Q1,
       _median,
       Q3,
-      IQR,
-      _skew,
-      _outliers,
-      self.percentage(_outliers),
       _min,
       _max,
       _mean,
     )
     new_df = pd.DataFrame(data=data, columns=columns)
     new_df.set_index('label', inplace=True)
+    new_df.sort_values(by=["number_of_outliers"], inplace=True)
     return new_df
