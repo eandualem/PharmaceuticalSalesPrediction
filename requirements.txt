@@ -4,6 +4,5 @@ seaborn
 pandas
 scipy
 sklearn
-xgboost
 dvc
 mlflow
