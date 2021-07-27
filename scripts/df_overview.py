@@ -27,14 +27,9 @@ class DfOverview:
 
   def getOverview(self) -> None:
 
-    stat = self.df.describe()
-    _labels = [column for column in self.df]
-    _count = [stat[column]['count'] for column in stat]
+    _labels = [column for column in self.df]  # Only numeric columns
+    _count = self.df.count().values
     _unique = [self.df[column].value_counts().shape[0] for column in self.df]
-    _min = [stat[column]['min'] for column in stat]
-    _max = [stat[column]['max'] for column in stat]
-    _mean = [stat[column]['mean'] for column in stat]
-    _median = [stat[column]['50%'] for column in stat]
     _missing_values = self.missing_value()
 
     columns = [
@@ -44,10 +39,6 @@ class DfOverview:
       'none_percentage',
       'unique_value_count',
       'unique_percentage',
-      'min_value',
-      'max_value',
-      'mean',
-      'median',
       'dtype']
     data = zip(
       _labels,
@@ -56,10 +47,6 @@ class DfOverview:
       self.percentage(_missing_values),
       _unique,
       self.percentage(_unique),
-      _min,
-      _max,
-      _mean,
-      _median,
       self.df.dtypes
     )
     new_df = pd.DataFrame(data=data, columns=columns)
