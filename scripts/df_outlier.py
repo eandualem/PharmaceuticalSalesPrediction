@@ -60,15 +60,11 @@ class DfOutlier:
     
     _labels = [column for column in self.df]
     Q1 = self.df.quantile(0.25)
+    _median = self.df.quantile(0.5)
     Q3 = self.df.quantile(0.75)
     IQR = Q3 - Q1
     _skew = self.calc_skew()
     _outliers = self.count_outliers(Q1, Q3, IQR)
-    stat = self.df.describe()
-    _min = [stat[column]['min'] for column in stat]
-    _max = [stat[column]['max'] for column in stat]
-    _mean = [stat[column]['mean'] for column in stat]
-    _median = [stat[column]['50%'] for column in stat]
 
     columns = [
       'label',
@@ -76,11 +72,8 @@ class DfOutlier:
       'percentage_of_outliers',
       'skew',
       'Q1',
-      'median',
-      'Q3',
-      'min_value',
-      'max_value',
-      'mean', ]
+      'Median'
+      'Q3',]
     data = zip(
       _labels,
       _outliers,
@@ -89,9 +82,6 @@ class DfOutlier:
       Q1,
       _median,
       Q3,
-      _min,
-      _max,
-      _mean,
     )
     new_df = pd.DataFrame(data=data, columns=columns)
     new_df.set_index('label', inplace=True)

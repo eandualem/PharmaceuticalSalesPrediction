@@ -7,12 +7,16 @@
     "dtypes",
     "ffill",
     "fillna",
+    "hspace",
     "inplace",
     "iterrows",
     "kmeans",
     "numpy",
     "plotly",
-    "scipy"
+    "scipy",
+    "wspace",
+    "xlabel",
+    "ylabel"
   ],
   "python.analysis.extraPaths": [
     "./scripts"
