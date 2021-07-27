@@ -57,7 +57,7 @@ class DfOutlier:
       self.df[col] = np.where(self.df[col] < lower, lower, self.df[col])
 
   def getOverview(self) -> None:
-    
+
     _labels = [column for column in self.df]
     Q1 = self.df.quantile(0.25)
     _median = self.df.quantile(0.5)
@@ -72,8 +72,9 @@ class DfOutlier:
       'percentage_of_outliers',
       'skew',
       'Q1',
-      'Median'
-      'Q3',]
+      'Median',
+      'Q3'
+    ]
     data = zip(
       _labels,
       _outliers,
