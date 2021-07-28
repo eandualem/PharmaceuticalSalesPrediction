@@ -1,6 +1,7 @@
 {
   "cSpell.words": [
     "Andualem",
+    "LGBM",
     "bfill",
     "cdist",
     "dtype",
@@ -18,7 +19,6 @@
     "xlabel",
     "ylabel"
   ],
-  "python.analysis.extraPaths": [
-    "./scripts"
-  ]
+  "python.analysis.extraPaths": ["./scripts"],
+  "python.formatting.provider": "autopep8"
 }

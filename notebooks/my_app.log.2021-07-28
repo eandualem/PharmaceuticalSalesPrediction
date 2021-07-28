@@ -1,0 +1,93 @@
+2021-07-28 00:43:42,046 — DfHelper — DEBUG — file read as csv
+2021-07-28 00:43:42,971 — DfHelper — DEBUG — file read as csv
+2021-07-28 00:43:43,054 — DfHelper — DEBUG — file read as csv
+2021-07-28 08:11:56,803 — DfOverview — DEBUG — Loaded successfully!
+2021-07-28 08:11:56,810 — DfCleaner — DEBUG — Loaded successfully!
+2021-07-28 08:11:56,830 — DfOutlier — DEBUG — Loaded successfully!
+2021-07-28 08:12:04,676 — DfHelper — DEBUG — file read as csv
+2021-07-28 08:12:05,214 — DfHelper — DEBUG — file read as csv
+2021-07-28 08:12:05,252 — DfHelper — DEBUG — file read as csv
+2021-07-28 08:41:17,727 — DfOverview — DEBUG — Loaded successfully!
+2021-07-28 08:41:17,734 — DfCleaner — DEBUG — Loaded successfully!
+2021-07-28 08:41:17,739 — DfOutlier — DEBUG — Loaded successfully!
+2021-07-28 08:41:17,987 — DfHelper — DEBUG — file read as csv
+2021-07-28 08:41:18,484 — DfHelper — DEBUG — file read as csv
+2021-07-28 08:41:18,519 — DfHelper — DEBUG — file read as csv
+2021-07-28 09:03:31,709 — DfOverview — DEBUG — Loaded successfully!
+2021-07-28 09:03:31,713 — DfCleaner — DEBUG — Loaded successfully!
+2021-07-28 09:03:31,716 — DfOutlier — DEBUG — Loaded successfully!
+2021-07-28 09:03:32,013 — DfHelper — DEBUG — file read as csv
+2021-07-28 09:03:32,590 — DfHelper — DEBUG — file read as csv
+2021-07-28 09:03:32,628 — DfHelper — DEBUG — file read as csv
+2021-07-28 10:44:50,230 — DfOverview — DEBUG — Loaded successfully!
+2021-07-28 10:44:50,248 — DfCleaner — DEBUG — Loaded successfully!
+2021-07-28 10:44:50,258 — DfOutlier — DEBUG — Loaded successfully!
+2021-07-28 10:44:58,465 — DfHelper — DEBUG — file read as csv
+2021-07-28 10:44:59,102 — DfHelper — DEBUG — file read as csv
+2021-07-28 10:44:59,146 — DfHelper — DEBUG — file read as csv
+2021-07-28 11:19:11,777 — DfOverview — DEBUG — Loaded successfully!
+2021-07-28 11:19:11,800 — DfCleaner — DEBUG — Loaded successfully!
+2021-07-28 11:19:11,803 — DfOutlier — DEBUG — Loaded successfully!
+2021-07-28 11:19:12,216 — DfHelper — DEBUG — file read as csv
+2021-07-28 11:19:12,782 — DfHelper — DEBUG — file read as csv
+2021-07-28 11:19:12,820 — DfHelper — DEBUG — file read as csv
+2021-07-28 11:37:06,922 — DfOverview — DEBUG — Loaded successfully!
+2021-07-28 11:37:06,925 — DfCleaner — DEBUG — Loaded successfully!
+2021-07-28 11:37:06,928 — DfOutlier — DEBUG — Loaded successfully!
+2021-07-28 11:37:07,258 — DfHelper — DEBUG — file read as csv
+2021-07-28 11:37:07,739 — DfHelper — DEBUG — file read as csv
+2021-07-28 11:37:07,772 — DfHelper — DEBUG — file read as csv
+2021-07-28 11:42:24,072 — DfHelper — INFO — file saved as csv
+2021-07-28 11:42:39,084 — DfHelper — INFO — file saved as csv
+2021-07-28 11:42:39,497 — DfHelper — INFO — file saved as csv
+2021-07-28 11:43:49,695 — DfOverview — DEBUG — Loaded successfully!
+2021-07-28 11:43:49,698 — DfCleaner — DEBUG — Loaded successfully!
+2021-07-28 11:43:49,701 — DfOutlier — DEBUG — Loaded successfully!
+2021-07-28 11:43:50,191 — DfHelper — DEBUG — file read as csv
+2021-07-28 11:43:50,769 — DfHelper — DEBUG — file read as csv
+2021-07-28 11:43:50,807 — DfHelper — DEBUG — file read as csv
+2021-07-28 11:44:10,275 — DfHelper — INFO — file saved as csv
+2021-07-28 11:44:20,477 — DfHelper — INFO — file saved as csv
+2021-07-28 11:44:20,889 — DfHelper — INFO — file saved as csv
+2021-07-28 11:45:49,562 — DfOverview — DEBUG — Loaded successfully!
+2021-07-28 11:45:49,567 — DfCleaner — DEBUG — Loaded successfully!
+2021-07-28 11:45:49,573 — DfOutlier — DEBUG — Loaded successfully!
+2021-07-28 11:48:30,291 — DfOverview — DEBUG — Loaded successfully!
+2021-07-28 11:48:30,296 — DfCleaner — DEBUG — Loaded successfully!
+2021-07-28 11:48:30,299 — DfOutlier — DEBUG — Loaded successfully!
+2021-07-28 11:50:43,569 — DfOverview — DEBUG — Loaded successfully!
+2021-07-28 11:50:43,572 — DfCleaner — DEBUG — Loaded successfully!
+2021-07-28 11:50:43,576 — DfOutlier — DEBUG — Loaded successfully!
+2021-07-28 11:52:14,114 — DfHelper — DEBUG — file read as csv
+2021-07-28 11:52:14,690 — DfHelper — DEBUG — file read as csv
+2021-07-28 11:52:14,721 — DfHelper — DEBUG — file read as csv
+2021-07-28 12:22:23,487 — DfCleaner — DEBUG — Loaded successfully!
+2021-07-28 12:22:23,491 — DfOutlier — DEBUG — Loaded successfully!
+2021-07-28 12:22:23,670 — DfOverview — DEBUG — Loaded successfully!
+2021-07-28 12:22:29,979 — DfHelper — DEBUG — file read as csv
+2021-07-28 12:22:30,528 — DfHelper — DEBUG — file read as csv
+2021-07-28 12:22:30,584 — DfHelper — DEBUG — file read as csv
+2021-07-28 12:38:12,559 — DfCleaner — DEBUG — Loaded successfully!
+2021-07-28 12:38:12,564 — DfOutlier — DEBUG — Loaded successfully!
+2021-07-28 12:38:12,731 — DfOverview — DEBUG — Loaded successfully!
+2021-07-28 12:38:17,634 — DfHelper — DEBUG — file read as csv
+2021-07-28 12:38:18,174 — DfHelper — DEBUG — file read as csv
+2021-07-28 12:38:18,208 — DfHelper — DEBUG — file read as csv
+2021-07-28 14:10:20,114 — DfCleaner — DEBUG — Loaded successfully!
+2021-07-28 14:10:20,129 — DfOutlier — DEBUG — Loaded successfully!
+2021-07-28 14:10:20,264 — DfOverview — DEBUG — Loaded successfully!
+2021-07-28 14:10:20,357 — DfHelper — DEBUG — file read as csv
+2021-07-28 14:10:20,815 — DfHelper — DEBUG — file read as csv
+2021-07-28 14:10:20,848 — DfHelper — DEBUG — file read as csv
+2021-07-28 16:12:59,154 — DfCleaner — DEBUG — Loaded successfully!
+2021-07-28 16:12:59,162 — DfOutlier — DEBUG — Loaded successfully!
+2021-07-28 16:12:59,324 — DfOverview — DEBUG — Loaded successfully!
+2021-07-28 16:13:04,171 — DfHelper — DEBUG — file read as csv
+2021-07-28 16:13:04,724 — DfHelper — DEBUG — file read as csv
+2021-07-28 16:13:04,759 — DfHelper — DEBUG — file read as csv
+2021-07-28 18:26:36,239 — DfCleaner — DEBUG — Loaded successfully!
+2021-07-28 18:26:36,243 — DfOutlier — DEBUG — Loaded successfully!
+2021-07-28 18:26:36,546 — DfOverview — DEBUG — Loaded successfully!
+2021-07-28 18:26:40,756 — DfHelper — DEBUG — file read as csv
+2021-07-28 18:26:41,290 — DfHelper — DEBUG — file read as csv
+2021-07-28 18:26:41,323 — DfHelper — DEBUG — file read as csv
