@@ -79,3 +79,9 @@
 2021-07-28 14:10:20,357 — DfHelper — DEBUG — file read as csv
 2021-07-28 14:10:20,815 — DfHelper — DEBUG — file read as csv
 2021-07-28 14:10:20,848 — DfHelper — DEBUG — file read as csv
+2021-07-28 16:12:59,154 — DfCleaner — DEBUG — Loaded successfully!
+2021-07-28 16:12:59,162 — DfOutlier — DEBUG — Loaded successfully!
+2021-07-28 16:12:59,324 — DfOverview — DEBUG — Loaded successfully!
+2021-07-28 16:13:04,171 — DfHelper — DEBUG — file read as csv
+2021-07-28 16:13:04,724 — DfHelper — DEBUG — file read as csv
+2021-07-28 16:13:04,759 — DfHelper — DEBUG — file read as csv
