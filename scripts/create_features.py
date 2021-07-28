@@ -27,7 +27,6 @@ def extract_features(df):
 
   df = df.set_index('Date')
   df = df.sort_index()
-
   return df
 
 
@@ -38,6 +37,7 @@ def merge(df, store):
 
 def extract_sales(df):
   return df[["Sales"]]
+
 
 def extract_customers(df):
   return df[["Sales"]]
