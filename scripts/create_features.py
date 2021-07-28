@@ -8,42 +8,49 @@ I have extracted 6 features for training the model
 '''
 
 Config.FEATURES_PATH.mkdir(parents=True, exist_ok=True)
-train_df = pd.read_csv(str(Config.DATASET_PATH / "train.csv"))
-test_df = pd.read_csv(str(Config.DATASET_PATH / "test.csv"))
+train_df = pd.read_csv(str(Config.TRAIN_PATH))
+test_df = pd.read_csv(str(Config.TEST_PATH))
+store_df = pd.read_csv(str(Config.STORE_PATH))
 
 
 def extract_features(df):
 
-  # date
-  df["date"] = pd.to_datetime(df.date).dt.date
-  df["date_of_week"] = pd.to_datetime(df.date).dt.dayofweek
-  df["date_of_month"] = pd.to_datetime(df.date).dt.day
+  # convert date column to datetime
+  df['Date'] = pd.to_datetime(df.Date)
 
-  # change categorical variables to numerical value
-  lb = LabelEncoder()
-  df['experiment'] = lb.fit_transform(df['experiment'])
-  df['device_make'] = lb.fit_transform(df['device_make'])
-  df['platform_os'] = lb.fit_transform(df['platform_os'])
-  df['browser'] = lb.fit_transform(df['browser'])
+  # Feature creation
+  df['Year'] = df.Date.dt.year
+  df['Month'] = df.Date.dt.month
+  df['Day'] = df.Date.dt.day
+  df['DayOfWeek'] = df.Date.dt.dayofweek
+  df['WeekOfYear'] = df.Date.dt.weekofyear
 
-  return df[["experiment", "hour", "date_of_week", "date_of_month", 'device_make', 'platform_os', 'browser']]
+  df = df.set_index('Date')
+  df = df.sort_index()
 
-
-def extract_labels(df):
-  df['aware'] = 0
-  df.loc[df['yes'] == 1, 'aware'] = 1
-  df.loc[df['yes'] == 0, 'aware'] = 0
-  return df[["aware"]]
+  return df
 
 
-train_features = extract_features(train_df)
-test_features = extract_features(test_df)
+def merge(df, store):
+  df_merge = pd.merge(df, store, on='Store')
+  return df_merge
 
-train_labels = extract_labels(train_df)
-test_labels = extract_labels(test_df)
+
+def extract_sales(df):
+  return df[["Sales"]]
+
+def extract_customers(df):
+  return df[["Sales"]]
+
+
+train_features = extract_features(merge(train_df, store_df))
+test_features = extract_features(merge(test_df, store_df))
+
+train_sales = extract_sales(train_df)
+train_customers = extract_customers(train_df)
 
 train_features.to_csv(str(Config.FEATURES_PATH / "train_features.csv"), index=None)
 test_features.to_csv(str(Config.FEATURES_PATH / "test_features.csv"), index=None)
 
-train_labels.to_csv(str(Config.FEATURES_PATH / "train_labels.csv"), index=None)
-test_labels.to_csv(str(Config.FEATURES_PATH / "test_labels.csv"), index=None)
+train_sales.to_csv(str(Config.FEATURES_PATH / "train_customers.csv"), index=None)
+train_customers.to_csv(str(Config.FEATURES_PATH / "train_sales.csv"), index=None)
