@@ -55,11 +55,11 @@ class VisSeaborn():
     if(subtitles == ""):
       subtitles = [""] * rows * cols
     if(x_labels == ""):
-      x_labels = [""]*rows*cols
+      x_labels = [""] * rows * cols
     if(y_labels == ""):
-      y_labels = [""]*rows*cols
+      y_labels = [""] * rows * cols
 
-    if(rows == 1 and cols==1):
+    if(rows == 1 and cols == 1):
       return self.single_plot(plot, title, x_labels, y_labels, figsize)
     if(rows == 1):
       return self.horizontal_plot(plot, cols, title, subtitles, x_labels, y_labels, figsize)
@@ -71,4 +71,3 @@ class VisSeaborn():
   def boxplot(self, df, y_value, title="", subtitles="", rows=1, cols=1, x_labels="", y_labels="", figsize=(8, 6)):
     plot = lambda r, c, ax: sns.boxplot(y=df[y_value[(r * cols) + c]], ax=ax(r, c))
     self.subplots(plot, rows, cols, title, subtitles, x_labels, y_labels, figsize)
-  
