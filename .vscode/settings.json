@@ -14,6 +14,7 @@
     "kmeans",
     "numpy",
     "plotly",
+    "rmse",
     "scipy",
     "wspace",
     "xlabel",
