@@ -1,46 +1,39 @@
 import mlflow
 import pandas as pd
-import xgboost.xgb as XGBRegressor
-import lightgbm.gbm as LGBMRegressor
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
-from sklearn.ensemble import RandomForestRegressor
 
 
-def Scaler():
-  scaler = StandardScaler()
-  return scaler
+class TrainModel():
+  '''
+  Class for training a model using sklearn pipeline
+  '''
 
+  def __init__(self, model, name):
+    self.model = model
+    self.name = name
 
-def rf_model():
-  model = RandomForestRegressor(n_jobs=-1, n_estimators=15)
-  return model
+  def scaler(self):
+    scaler = StandardScaler()
+    return scaler
 
+  def pipeline(self, X, y):
+    train_pipe = Pipeline(
+      [('Scaling', self.scaler()),
+       ('Random Forest', self.model())])
+    return train_pipe.fit(X, y)
 
-def xgb_model():
-  model = XGBRegressor()
-  return model
+  def train(self, X, y):
+    mlflow.set_experiment('Random Forest')
+    mlflow.sklearn.autolog()
+    self.pipeline(X, y)
 
+  def train_sales(self):
+    X = pd.read_csv('../features/train_features.csv')
+    y = pd.read_csv('../features/train_sales.csv')
+    self.train(X, y)
 
-def gbm_model():
-  model = LGBMRegressor()
-  return model
-
-
-def model_pipeline(X, y):
-  my_pipe = Pipeline(
-    [('Scaling', Scaler()),
-     ('Random Forest', rf_model())])
-  return my_pipe.fit(X, y)
-
-
-train = pd.read_csv('../features/train_features.csv')
-test = pd.read_csv('../features/test_features.csv')
-train = train[train['Open'] != 0]
-
-X = train.drop(['Sales', 'Customers', "Store"], axis=1)
-y = train.Sales
-
-mlflow.set_experiment('Random Forest')
-mlflow.sklearn.autolog()
-model_pipeline(X, y)
+  def train_customers(self):
+    X = pd.read_csv('../features/train_features.csv')
+    y = pd.read_csv('../features/train_customers.csv')
+    self.train(X, y)
