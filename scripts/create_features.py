@@ -39,22 +39,22 @@ class CreateFeatures():
 
     num_days = 0
     for i in df['StateHoliday']:
-        if(i == 1):
-            num_days = 0
-        else:
-            num_days += 1
-        days_after_state_holiday.append(num_days)
+      if(i == 1):
+        num_days = 0
+      else:
+        num_days += 1
+      days_after_state_holiday.append(num_days)
 
     small_list = []
     bigger_list = []
     for i in days_after_state_holiday:
-        if(i == 0):
-            small_list.reverse()
-            bigger_list.append(small_list)
-            bigger_list.append([0])
-            small_list = []
-        else:
-            small_list.append(i)
+      if(i == 0):
+        small_list.reverse()
+        bigger_list.append(small_list)
+        bigger_list.append([0])
+        small_list = []
+      else:
+        small_list.append(i)
 
     small_list.reverse()
     bigger_list.append(small_list)
@@ -80,7 +80,7 @@ class CreateFeatures():
     df['Weekday'] = df['DayOfWeek'].apply(lambda x: 1 if x < 6 else 0)
 
     df["part_of_month"] = df["Day"].apply(self.get_part_of_month)
-    
+
     df = df.set_index('Date')
     df = df.sort_index()
     return df

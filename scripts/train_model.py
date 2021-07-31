@@ -19,14 +19,16 @@ class TrainModel():
 
   def pipeline(self, X, y):
     train_pipe = Pipeline(
-      [('Scaling', self.scaler()),
-       ('Random Forest', self.model())])
-    return train_pipe.fit(X, y)
+        [('Scaling', self.scaler()),
+         (self.name, self.model())])
+
+    model = train_pipe.fit(X, y)
+    return model
 
   def train(self, X, y):
-    mlflow.set_experiment('Random Forest')
+    mlflow.set_experiment(self.name)
     mlflow.sklearn.autolog()
-    self.pipeline(X, y)
+    return self.pipeline(X, y)
 
   def train_sales(self):
     X = pd.read_csv('../features/train_features.csv')

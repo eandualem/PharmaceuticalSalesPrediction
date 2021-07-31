@@ -71,3 +71,11 @@ class VisSeaborn():
   def boxplot(self, df, y_value, title="", subtitles="", rows=1, cols=1, x_labels="", y_labels="", figsize=(8, 6)):
     plot = lambda r, c, ax: sns.boxplot(y=df[y_value[(r * cols) + c]], ax=ax(r, c))
     self.subplots(plot, rows, cols, title, subtitles, x_labels, y_labels, figsize)
+
+  def plot_feature_importance(feat_imp, mode_name):
+    plt.figure(figsize=(10, 6))
+    sns.barplot(x="Feature Importance", y=feat_imp.index, data=feat_imp)
+    plt.ylabel('Feature', fontsize=14)
+    plt.xlabel('Feature Importance', fontsize=14)
+    plt.savefig("feature_importance_" + mode_name + "png", dpi=120)
+    plt.close()
