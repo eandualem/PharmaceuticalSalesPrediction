@@ -65,6 +65,7 @@ class CreateFeatures():
     return df
 
   def extract_features(self, df):
+    df = df[df['Open'] != 0]
 
     # convert date column to datetime
     df = self.get_state_holiday_info(df)
@@ -104,11 +105,13 @@ class CreateFeatures():
     train_sales = self.extract_sales(train_features)
     train_customers = self.extract_customers(train_features)
 
-    train_features.to_csv(str(Config.FEATURES_PATH / "train_features.csv"), index=None)
-    test_features.to_csv(str(Config.FEATURES_PATH / "test_features.csv"), index=None)
+    train_features.drop(["Store", "Sales", "Customers"], axis=1, inplace=True)
+    test_features.drop(["Store"], axis=1, inplace=True)
 
-    train_sales.to_csv(str(Config.FEATURES_PATH / "train_sales.csv"), index=None)
-    train_customers.to_csv(str(Config.FEATURES_PATH / "train_customers.csv"), index=None)
+    self.file_handler.save_csv(train_features, str(Config.FEATURES_PATH / "train_features.csv"))
+    self.file_handler.save_csv(test_features, str(Config.FEATURES_PATH / "test_features.csv"))
+    self.file_handler.save_csv(train_sales, str(Config.FEATURES_PATH / "train_sales.csv"))
+    self.file_handler.save_csv(train_customers, str(Config.FEATURES_PATH / "train_customers.csv"))
 
 
 cf = CreateFeatures()

@@ -1,17 +1,36 @@
-2021-07-31 19:36:42,244 — DfHelper — ERROR — save failed
-Traceback (most recent call last):
-  File "/Users/ea/Projects/PharmaceuticalSalesPrediction/scripts/file_handler.py", line 45, in save_model
-    name = Config.MODELS_PATH + model_name + time + ".pkl"
-TypeError: unsupported operand type(s) for +: 'PosixPath' and 'str'
-2021-07-31 19:42:18,243 — DfHelper — ERROR — save failed
-Traceback (most recent call last):
-  File "/Users/ea/Projects/PharmaceuticalSalesPrediction/scripts/file_handler.py", line 45, in save_model
-    name = Config.MODELS_PATH / model_name + time + ".pkl"
-TypeError: unsupported operand type(s) for +: 'PosixPath' and 'str'
-2021-07-31 19:59:47,576 — DfHelper — ERROR — save failed
-Traceback (most recent call last):
-  File "/Users/ea/Projects/PharmaceuticalSalesPrediction/scripts/file_handler.py", line 46, in save_model
-    pickle.dump(model, open(str(name), "wb"))
-FileNotFoundError: [Errno 2] No such file or directory: '../models/XGBRegressor2021-07-31-16:59:47.pkl'
-2021-07-31 20:04:39,957 — DfHelper — INFO — file saved as csv
-2021-07-31 20:30:52,817 — DfHelper — INFO — file saved as csv
+2021-08-01 00:56:35,816 — DfHelper — INFO — file saved as csv
+2021-08-01 00:56:36,323 — DfHelper — INFO — file saved as csv
+2021-08-01 00:56:43,924 — DfHelper — INFO — file saved as csv
+2021-08-01 00:56:51,601 — DfHelper — INFO — file saved as csv
+2021-08-01 00:58:58,676 — DfHelper — INFO — file saved as csv
+2021-08-01 01:00:28,933 — DfHelper — INFO — file saved as csv
+2021-08-01 01:00:29,488 — DfHelper — INFO — file saved as csv
+2021-08-01 01:00:30,530 — DfHelper — INFO — file saved as csv
+2021-08-01 01:00:31,594 — DfHelper — INFO — file saved as csv
+2021-08-01 01:05:11,695 — DfHelper — INFO — file saved as csv
+2021-08-01 01:05:12,217 — DfHelper — INFO — file saved as csv
+2021-08-01 01:05:19,759 — DfHelper — INFO — file saved as csv
+2021-08-01 01:05:27,231 — DfHelper — INFO — file saved as csv
+2021-08-01 01:08:03,743 — DfHelper — INFO — file saved as csv
+2021-08-01 01:11:28,842 — DfHelper — INFO — file saved as csv
+2021-08-01 01:13:19,159 — DfHelper — INFO — file saved as csv
+2021-08-01 01:13:19,606 — DfHelper — INFO — file saved as csv
+2021-08-01 01:13:25,946 — DfHelper — INFO — file saved as csv
+2021-08-01 01:13:36,057 — DfHelper — INFO — file saved as csv
+2021-08-01 01:16:03,149 — DfHelper — INFO — file saved as csv
+2021-08-01 01:16:03,582 — DfHelper — INFO — file saved as csv
+2021-08-01 01:16:10,486 — DfHelper — INFO — file saved as csv
+2021-08-01 01:16:17,824 — DfHelper — INFO — file saved as csv
+2021-08-01 01:19:01,504 — DfHelper — INFO — file saved as csv
+2021-08-01 01:22:41,978 — DfHelper — INFO — file saved as csv
+2021-08-01 01:24:32,079 — DfHelper — INFO — file saved as csv
+2021-08-01 01:26:06,526 — DfHelper — INFO — file saved as csv
+2021-08-01 01:27:53,164 — DfHelper — INFO — file saved as csv
+2021-08-01 01:28:27,321 — DfHelper — INFO — file saved as csv
+2021-08-01 01:28:46,621 — DfHelper — INFO — file saved as csv
+2021-08-01 01:49:23,286 — DfHelper — INFO — file saved as csv
+2021-08-01 01:49:38,939 — DfHelper — INFO — file saved as csv
+2021-08-01 01:50:54,592 — DfHelper — INFO — file saved as csv
+2021-08-01 01:51:09,314 — DfHelper — INFO — file saved as csv
+2021-08-01 02:02:10,826 — DfHelper — INFO — file saved as csv
+2021-08-01 02:02:29,616 — DfHelper — INFO — file saved as csv

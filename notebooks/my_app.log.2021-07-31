@@ -1,0 +1,453 @@
+2021-07-31 08:27:26,111 — DfHelper — ERROR — file not found
+Traceback (most recent call last):
+  File "/Users/ea/Projects/PharmaceuticalSalesPrediction/scripts/dvc_helper.py", line 26, in read_csv
+    df = pd.read_csv(csv_path, na_values=missing_values)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/util/_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/io/parsers/readers.py", line 586, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/io/parsers/readers.py", line 482, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/io/parsers/readers.py", line 811, in __init__
+    self._engine = self._make_engine(self.engine)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/io/parsers/readers.py", line 1040, in _make_engine
+    return mapping[engine](self.f, **self.options)  # type: ignore[call-arg]
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 51, in __init__
+    self._open_handles(src, kwds)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/io/parsers/base_parser.py", line 222, in _open_handles
+    self.handles = get_handle(
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/io/common.py", line 701, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/store.csv'
+2021-07-31 08:27:26,156 — DfHelper — ERROR — file not found
+Traceback (most recent call last):
+  File "/Users/ea/Projects/PharmaceuticalSalesPrediction/scripts/dvc_helper.py", line 26, in read_csv
+    df = pd.read_csv(csv_path, na_values=missing_values)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/util/_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/io/parsers/readers.py", line 586, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/io/parsers/readers.py", line 482, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/io/parsers/readers.py", line 811, in __init__
+    self._engine = self._make_engine(self.engine)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/io/parsers/readers.py", line 1040, in _make_engine
+    return mapping[engine](self.f, **self.options)  # type: ignore[call-arg]
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 51, in __init__
+    self._open_handles(src, kwds)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/io/parsers/base_parser.py", line 222, in _open_handles
+    self.handles = get_handle(
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/io/common.py", line 701, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/train.csv'
+2021-07-31 08:27:26,158 — DfHelper — ERROR — file not found
+Traceback (most recent call last):
+  File "/Users/ea/Projects/PharmaceuticalSalesPrediction/scripts/dvc_helper.py", line 26, in read_csv
+    df = pd.read_csv(csv_path, na_values=missing_values)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/util/_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/io/parsers/readers.py", line 586, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/io/parsers/readers.py", line 482, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/io/parsers/readers.py", line 811, in __init__
+    self._engine = self._make_engine(self.engine)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/io/parsers/readers.py", line 1040, in _make_engine
+    return mapping[engine](self.f, **self.options)  # type: ignore[call-arg]
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 51, in __init__
+    self._open_handles(src, kwds)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/io/parsers/base_parser.py", line 222, in _open_handles
+    self.handles = get_handle(
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/io/common.py", line 701, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/test.csv'
+2021-07-31 08:27:45,572 — DfHelper — ERROR — file not found
+Traceback (most recent call last):
+  File "/Users/ea/Projects/PharmaceuticalSalesPrediction/scripts/dvc_helper.py", line 26, in read_csv
+    df = pd.read_csv(csv_path, na_values=missing_values)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/util/_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/io/parsers/readers.py", line 586, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/io/parsers/readers.py", line 482, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/io/parsers/readers.py", line 811, in __init__
+    self._engine = self._make_engine(self.engine)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/io/parsers/readers.py", line 1040, in _make_engine
+    return mapping[engine](self.f, **self.options)  # type: ignore[call-arg]
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 51, in __init__
+    self._open_handles(src, kwds)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/io/parsers/base_parser.py", line 222, in _open_handles
+    self.handles = get_handle(
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/io/common.py", line 701, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/store.csv'
+2021-07-31 08:27:45,601 — DfHelper — ERROR — file not found
+Traceback (most recent call last):
+  File "/Users/ea/Projects/PharmaceuticalSalesPrediction/scripts/dvc_helper.py", line 26, in read_csv
+    df = pd.read_csv(csv_path, na_values=missing_values)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/util/_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/io/parsers/readers.py", line 586, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/io/parsers/readers.py", line 482, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/io/parsers/readers.py", line 811, in __init__
+    self._engine = self._make_engine(self.engine)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/io/parsers/readers.py", line 1040, in _make_engine
+    return mapping[engine](self.f, **self.options)  # type: ignore[call-arg]
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 51, in __init__
+    self._open_handles(src, kwds)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/io/parsers/base_parser.py", line 222, in _open_handles
+    self.handles = get_handle(
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/io/common.py", line 701, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/train.csv'
+2021-07-31 08:27:45,612 — DfHelper — ERROR — file not found
+Traceback (most recent call last):
+  File "/Users/ea/Projects/PharmaceuticalSalesPrediction/scripts/dvc_helper.py", line 26, in read_csv
+    df = pd.read_csv(csv_path, na_values=missing_values)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/util/_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/io/parsers/readers.py", line 586, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/io/parsers/readers.py", line 482, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/io/parsers/readers.py", line 811, in __init__
+    self._engine = self._make_engine(self.engine)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/io/parsers/readers.py", line 1040, in _make_engine
+    return mapping[engine](self.f, **self.options)  # type: ignore[call-arg]
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 51, in __init__
+    self._open_handles(src, kwds)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/io/parsers/base_parser.py", line 222, in _open_handles
+    self.handles = get_handle(
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/io/common.py", line 701, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../data/test.csv'
+2021-07-31 08:28:27,345 — DfHelper — DEBUG — file read as csv
+2021-07-31 08:28:27,932 — DfHelper — DEBUG — file read as csv
+2021-07-31 08:28:27,975 — DfHelper — DEBUG — file read as csv
+2021-07-31 08:28:44,631 — DfHelper — INFO — file saved as csv
+2021-07-31 08:28:54,967 — DfHelper — INFO — file saved as csv
+2021-07-31 08:28:55,360 — DfHelper — INFO — file saved as csv
+2021-07-31 12:58:57,340 — DfOverview — DEBUG — Loaded successfully!
+2021-07-31 12:58:57,344 — DfCleaner — DEBUG — Loaded successfully!
+2021-07-31 12:58:57,348 — DfOutlier — DEBUG — Loaded successfully!
+2021-07-31 12:59:39,106 — DfHelper — DEBUG — file read as csv
+2021-07-31 12:59:39,622 — DfHelper — DEBUG — file read as csv
+2021-07-31 12:59:39,658 — DfHelper — DEBUG — file read as csv
+2021-07-31 13:11:43,282 — DfOverview — DEBUG — Loaded successfully!
+2021-07-31 13:11:43,288 — DfCleaner — DEBUG — Loaded successfully!
+2021-07-31 13:11:43,295 — DfOutlier — DEBUG — Loaded successfully!
+2021-07-31 13:12:20,663 — DfHelper — ERROR — Error loading file from dvc
+Traceback (most recent call last):
+  File "/Users/ea/Projects/PharmaceuticalSalesPrediction/scripts/file_handler.py", line 18, in get_dvc_file
+    data_url = dvc.api.get_url(path=str(file_path), repo=str(Config.REPO), rev=tag)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/dvc/api.py", line 22, in get_url
+    with Repo.open(repo, rev=rev, subrepos=True, uninitialized=True) as _repo:
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/contextlib.py", line 113, in __enter__
+    return next(self.gen)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/dvc/external_repo.py", line 70, in external_repo
+    repo = Repo(**repo_kwargs)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/dvc/repo/__init__.py", line 156, in __init__
+    self.root_dir, self.dvc_dir, self.tmp_dir = self._get_repo_dirs(
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/dvc/repo/__init__.py", line 104, in _get_repo_dirs
+    fs = scm.get_fs(rev) if isinstance(scm, Git) and rev else None
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/dvc/scm/git/__init__.py", line 353, in get_fs
+    resolved = self.resolve_rev(rev)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/dvc/scm/git/__init__.py", line 400, in resolve_rev
+    return self._resolve_rev(rev)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/dvc/scm/git/__init__.py", line 343, in _backend_func
+    return func(*args, **kwargs)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/dvc/scm/git/backend/pygit2.py", line 239, in resolve_rev
+    raise RevError(f"unknown Git revision '{rev}'")
+dvc.scm.base.RevError: unknown Git revision 'store-v0'
+2021-07-31 13:14:05,907 — DfHelper — ERROR — Error loading file from dvc
+Traceback (most recent call last):
+  File "/Users/ea/Projects/PharmaceuticalSalesPrediction/scripts/file_handler.py", line 18, in get_dvc_file
+    data_url = dvc.api.get_url(path=str(file_path), repo=str(Config.REPO), rev=tag)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/dvc/api.py", line 22, in get_url
+    with Repo.open(repo, rev=rev, subrepos=True, uninitialized=True) as _repo:
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/contextlib.py", line 113, in __enter__
+    return next(self.gen)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/dvc/external_repo.py", line 70, in external_repo
+    repo = Repo(**repo_kwargs)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/dvc/repo/__init__.py", line 156, in __init__
+    self.root_dir, self.dvc_dir, self.tmp_dir = self._get_repo_dirs(
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/dvc/repo/__init__.py", line 104, in _get_repo_dirs
+    fs = scm.get_fs(rev) if isinstance(scm, Git) and rev else None
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/dvc/scm/git/__init__.py", line 353, in get_fs
+    resolved = self.resolve_rev(rev)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/dvc/scm/git/__init__.py", line 400, in resolve_rev
+    return self._resolve_rev(rev)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/dvc/scm/git/__init__.py", line 343, in _backend_func
+    return func(*args, **kwargs)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/dvc/scm/git/backend/pygit2.py", line 239, in resolve_rev
+    raise RevError(f"unknown Git revision '{rev}'")
+dvc.scm.base.RevError: unknown Git revision 'train-v0'
+2021-07-31 13:14:32,266 — DfHelper — ERROR — Error loading file from dvc
+Traceback (most recent call last):
+  File "/Users/ea/Projects/PharmaceuticalSalesPrediction/scripts/file_handler.py", line 18, in get_dvc_file
+    data_url = dvc.api.get_url(path=str(file_path), repo=str(Config.REPO), rev=tag)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/dvc/api.py", line 22, in get_url
+    with Repo.open(repo, rev=rev, subrepos=True, uninitialized=True) as _repo:
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/contextlib.py", line 113, in __enter__
+    return next(self.gen)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/dvc/external_repo.py", line 70, in external_repo
+    repo = Repo(**repo_kwargs)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/dvc/repo/__init__.py", line 156, in __init__
+    self.root_dir, self.dvc_dir, self.tmp_dir = self._get_repo_dirs(
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/dvc/repo/__init__.py", line 104, in _get_repo_dirs
+    fs = scm.get_fs(rev) if isinstance(scm, Git) and rev else None
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/dvc/scm/git/__init__.py", line 353, in get_fs
+    resolved = self.resolve_rev(rev)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/dvc/scm/git/__init__.py", line 400, in resolve_rev
+    return self._resolve_rev(rev)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/dvc/scm/git/__init__.py", line 343, in _backend_func
+    return func(*args, **kwargs)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/dvc/scm/git/backend/pygit2.py", line 239, in resolve_rev
+    raise RevError(f"unknown Git revision '{rev}'")
+dvc.scm.base.RevError: unknown Git revision 'train-v1'
+2021-07-31 13:20:50,237 — DfOverview — DEBUG — Loaded successfully!
+2021-07-31 13:20:50,241 — DfCleaner — DEBUG — Loaded successfully!
+2021-07-31 13:20:50,245 — DfOutlier — DEBUG — Loaded successfully!
+2021-07-31 13:21:16,542 — DfHelper — ERROR — Error loading file from dvc
+Traceback (most recent call last):
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/funcy/flow.py", line 112, in reraise
+    yield
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/dvc/api.py", line 25, in get_url
+    metadata = _repo.repo_fs.metadata(path_info)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/dvc/fs/repo.py", line 409, in metadata
+    raise FileNotFoundError
+FileNotFoundError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/ea/Projects/PharmaceuticalSalesPrediction/scripts/file_handler.py", line 18, in get_dvc_file
+    data_url = dvc.api.get_url(path=str(file_path), repo=str(Config.REPO), rev=tag)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/dvc/api.py", line 25, in get_url
+    metadata = _repo.repo_fs.metadata(path_info)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/funcy/flow.py", line 116, in reraise
+    raise_from(into, e)
+  File "<string>", line 3, in raise_from
+dvc.exceptions.PathMissingError: The path '../data/train.csv' does not exist in the target repository 'https://github.com/eandualem/PharmaceuticalSalesPrediction' neither as a DVC output nor as a Git-tracked file.
+2021-07-31 13:22:47,262 — DfHelper — ERROR — Error loading file from dvc
+Traceback (most recent call last):
+  File "/Users/ea/Projects/PharmaceuticalSalesPrediction/scripts/file_handler.py", line 18, in get_dvc_file
+    data_url = dvc.api.get_url(path=str(file_path), repo=str(Config.REPO), rev=tag)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/dvc/api.py", line 32, in get_url
+    return cloud.get_url_for(remote, checksum=md5)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/dvc/data_cloud.py", line 143, in get_url_for
+    remote_obj = self.get_remote(remote)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/dvc/data_cloud.py", line 38, in get_remote
+    return self._init_remote(name)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/dvc/data_cloud.py", line 58, in _init_remote
+    return get_remote(self.repo, name=name)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/dvc/remote/__init__.py", line 8, in get_remote
+    fs = cls(**config)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/dvc/fs/gdrive.py", line 105, in __init__
+    super().__init__(**config)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/dvc/fs/base.py", line 58, in __init__
+    self._check_requires(**kwargs)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/dvc/fs/base.py", line 118, in _check_requires
+    raise RemoteMissingDepsError(
+dvc.fs.base.RemoteMissingDepsError: URL 'gdrive://15H0T2o8aR2h7gLxEj1JGVpHNr1IC6pID' is supported but requires these missing dependencies: ['pydrive2']. To install dvc with those dependencies, run:
+
+	pip install 'dvc[gdrive]'
+
+See <[36mhttps://dvc.org/doc/install[39m> for more info.
+2021-07-31 13:23:55,595 — DfOverview — DEBUG — Loaded successfully!
+2021-07-31 13:23:55,598 — DfCleaner — DEBUG — Loaded successfully!
+2021-07-31 13:23:55,602 — DfOutlier — DEBUG — Loaded successfully!
+2021-07-31 13:24:13,300 — DfHelper — ERROR — Error loading file from dvc
+Traceback (most recent call last):
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/fsspec/registry.py", line 211, in get_filesystem_class
+    register_implementation(protocol, _import_class(bit["class"]))
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/fsspec/registry.py", line 234, in _import_class
+    mod = importlib.import_module(mod)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'gdrivefs'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/ea/Projects/PharmaceuticalSalesPrediction/scripts/file_handler.py", line 19, in get_dvc_file
+    df = pd.read_csv(data_url, sep=',')
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/util/_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/io/parsers/readers.py", line 586, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/io/parsers/readers.py", line 482, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/io/parsers/readers.py", line 811, in __init__
+    self._engine = self._make_engine(self.engine)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/io/parsers/readers.py", line 1040, in _make_engine
+    return mapping[engine](self.f, **self.options)  # type: ignore[call-arg]
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 51, in __init__
+    self._open_handles(src, kwds)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/io/parsers/base_parser.py", line 222, in _open_handles
+    self.handles = get_handle(
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/io/common.py", line 608, in get_handle
+    ioargs = _get_filepath_or_buffer(
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/io/common.py", line 357, in _get_filepath_or_buffer
+    file_obj = fsspec.open(
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/fsspec/core.py", line 429, in open
+    return open_files(
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/fsspec/core.py", line 281, in open_files
+    fs, fs_token, paths = get_fs_token_paths(
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/fsspec/core.py", line 599, in get_fs_token_paths
+    cls = get_filesystem_class(protocol)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/fsspec/registry.py", line 213, in get_filesystem_class
+    raise ImportError(bit["err"]) from e
+ImportError: Please install gdrivefs for access to Google Drive
+2021-07-31 13:26:46,041 — DfOverview — DEBUG — Loaded successfully!
+2021-07-31 13:26:46,044 — DfCleaner — DEBUG — Loaded successfully!
+2021-07-31 13:26:46,050 — DfOutlier — DEBUG — Loaded successfully!
+2021-07-31 13:26:56,810 — DfHelper — ERROR — Error loading file from dvc
+Traceback (most recent call last):
+  File "/Users/ea/Projects/PharmaceuticalSalesPrediction/scripts/file_handler.py", line 19, in get_dvc_file
+    df = pd.read_csv(data_url, sep=',')
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/util/_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/io/parsers/readers.py", line 586, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/io/parsers/readers.py", line 482, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/io/parsers/readers.py", line 811, in __init__
+    self._engine = self._make_engine(self.engine)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/io/parsers/readers.py", line 1040, in _make_engine
+    return mapping[engine](self.f, **self.options)  # type: ignore[call-arg]
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 51, in __init__
+    self._open_handles(src, kwds)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/io/parsers/base_parser.py", line 222, in _open_handles
+    self.handles = get_handle(
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/io/common.py", line 608, in get_handle
+    ioargs = _get_filepath_or_buffer(
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/pandas/io/common.py", line 357, in _get_filepath_or_buffer
+    file_obj = fsspec.open(
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/fsspec/core.py", line 429, in open
+    return open_files(
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/fsspec/core.py", line 281, in open_files
+    fs, fs_token, paths = get_fs_token_paths(
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/fsspec/core.py", line 599, in get_fs_token_paths
+    cls = get_filesystem_class(protocol)
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/fsspec/registry.py", line 211, in get_filesystem_class
+    register_implementation(protocol, _import_class(bit["class"]))
+  File "/Users/ea/Library/Python/3.8/lib/python/site-packages/fsspec/registry.py", line 235, in _import_class
+    return getattr(mod, name)
+AttributeError: module 'gdrivefs' has no attribute 'GoogleDriveFileSystem'
+2021-07-31 14:48:16,738 — DfOverview — DEBUG — Loaded successfully!
+2021-07-31 14:48:16,741 — DfCleaner — DEBUG — Loaded successfully!
+2021-07-31 14:48:16,744 — DfOutlier — DEBUG — Loaded successfully!
+2021-07-31 14:53:20,768 — DfOverview — DEBUG — Loaded successfully!
+2021-07-31 14:53:20,772 — DfCleaner — DEBUG — Loaded successfully!
+2021-07-31 14:53:20,775 — DfOutlier — DEBUG — Loaded successfully!
+2021-07-31 14:53:35,697 — DfHelper — ERROR — Error loading file from dvc
+Traceback (most recent call last):
+  File "/Users/ea/Projects/PharmaceuticalSalesPrediction/env/lib/python3.8/site-packages/fsspec/registry.py", line 211, in get_filesystem_class
+    register_implementation(protocol, _import_class(bit["class"]))
+  File "/Users/ea/Projects/PharmaceuticalSalesPrediction/env/lib/python3.8/site-packages/fsspec/registry.py", line 234, in _import_class
+    mod = importlib.import_module(mod)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'gdrivefs'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/ea/Projects/PharmaceuticalSalesPrediction/scripts/file_handler.py", line 19, in get_dvc_file
+    df = pd.read_csv(data_url, sep=',')
+  File "/Users/ea/Projects/PharmaceuticalSalesPrediction/env/lib/python3.8/site-packages/pandas/util/_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/ea/Projects/PharmaceuticalSalesPrediction/env/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 586, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/Users/ea/Projects/PharmaceuticalSalesPrediction/env/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 482, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/Users/ea/Projects/PharmaceuticalSalesPrediction/env/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 811, in __init__
+    self._engine = self._make_engine(self.engine)
+  File "/Users/ea/Projects/PharmaceuticalSalesPrediction/env/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1040, in _make_engine
+    return mapping[engine](self.f, **self.options)  # type: ignore[call-arg]
+  File "/Users/ea/Projects/PharmaceuticalSalesPrediction/env/lib/python3.8/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 51, in __init__
+    self._open_handles(src, kwds)
+  File "/Users/ea/Projects/PharmaceuticalSalesPrediction/env/lib/python3.8/site-packages/pandas/io/parsers/base_parser.py", line 222, in _open_handles
+    self.handles = get_handle(
+  File "/Users/ea/Projects/PharmaceuticalSalesPrediction/env/lib/python3.8/site-packages/pandas/io/common.py", line 608, in get_handle
+    ioargs = _get_filepath_or_buffer(
+  File "/Users/ea/Projects/PharmaceuticalSalesPrediction/env/lib/python3.8/site-packages/pandas/io/common.py", line 357, in _get_filepath_or_buffer
+    file_obj = fsspec.open(
+  File "/Users/ea/Projects/PharmaceuticalSalesPrediction/env/lib/python3.8/site-packages/fsspec/core.py", line 429, in open
+    return open_files(
+  File "/Users/ea/Projects/PharmaceuticalSalesPrediction/env/lib/python3.8/site-packages/fsspec/core.py", line 281, in open_files
+    fs, fs_token, paths = get_fs_token_paths(
+  File "/Users/ea/Projects/PharmaceuticalSalesPrediction/env/lib/python3.8/site-packages/fsspec/core.py", line 599, in get_fs_token_paths
+    cls = get_filesystem_class(protocol)
+  File "/Users/ea/Projects/PharmaceuticalSalesPrediction/env/lib/python3.8/site-packages/fsspec/registry.py", line 213, in get_filesystem_class
+    raise ImportError(bit["err"]) from e
+ImportError: Please install gdrivefs for access to Google Drive
+2021-07-31 14:56:05,358 — DfHelper — ERROR — Error loading file from dvc
+Traceback (most recent call last):
+  File "/Users/ea/Projects/PharmaceuticalSalesPrediction/scripts/file_handler.py", line 19, in get_dvc_file
+    df = pd.read_csv(data_url, sep=',')
+  File "/Users/ea/Projects/PharmaceuticalSalesPrediction/env/lib/python3.8/site-packages/pandas/util/_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/ea/Projects/PharmaceuticalSalesPrediction/env/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 586, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/Users/ea/Projects/PharmaceuticalSalesPrediction/env/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 482, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/Users/ea/Projects/PharmaceuticalSalesPrediction/env/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 811, in __init__
+    self._engine = self._make_engine(self.engine)
+  File "/Users/ea/Projects/PharmaceuticalSalesPrediction/env/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1040, in _make_engine
+    return mapping[engine](self.f, **self.options)  # type: ignore[call-arg]
+  File "/Users/ea/Projects/PharmaceuticalSalesPrediction/env/lib/python3.8/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 51, in __init__
+    self._open_handles(src, kwds)
+  File "/Users/ea/Projects/PharmaceuticalSalesPrediction/env/lib/python3.8/site-packages/pandas/io/parsers/base_parser.py", line 222, in _open_handles
+    self.handles = get_handle(
+  File "/Users/ea/Projects/PharmaceuticalSalesPrediction/env/lib/python3.8/site-packages/pandas/io/common.py", line 608, in get_handle
+    ioargs = _get_filepath_or_buffer(
+  File "/Users/ea/Projects/PharmaceuticalSalesPrediction/env/lib/python3.8/site-packages/pandas/io/common.py", line 357, in _get_filepath_or_buffer
+    file_obj = fsspec.open(
+  File "/Users/ea/Projects/PharmaceuticalSalesPrediction/env/lib/python3.8/site-packages/fsspec/core.py", line 429, in open
+    return open_files(
+  File "/Users/ea/Projects/PharmaceuticalSalesPrediction/env/lib/python3.8/site-packages/fsspec/core.py", line 281, in open_files
+    fs, fs_token, paths = get_fs_token_paths(
+  File "/Users/ea/Projects/PharmaceuticalSalesPrediction/env/lib/python3.8/site-packages/fsspec/core.py", line 599, in get_fs_token_paths
+    cls = get_filesystem_class(protocol)
+  File "/Users/ea/Projects/PharmaceuticalSalesPrediction/env/lib/python3.8/site-packages/fsspec/registry.py", line 211, in get_filesystem_class
+    register_implementation(protocol, _import_class(bit["class"]))
+  File "/Users/ea/Projects/PharmaceuticalSalesPrediction/env/lib/python3.8/site-packages/fsspec/registry.py", line 235, in _import_class
+    return getattr(mod, name)
+AttributeError: module 'gdrivefs' has no attribute 'GoogleDriveFileSystem'
+2021-07-31 15:31:57,514 — DfHelper — DEBUG — file read as csv
+2021-07-31 15:31:58,556 — DfHelper — DEBUG — file read as csv
+2021-07-31 15:31:58,621 — DfHelper — DEBUG — file read as csv
+2021-07-31 17:35:44,983 — DfOverview — DEBUG — Loaded successfully!
+2021-07-31 17:35:44,986 — DfCleaner — DEBUG — Loaded successfully!
+2021-07-31 17:35:44,990 — DfOutlier — DEBUG — Loaded successfully!
+2021-07-31 17:35:45,418 — DfHelper — DEBUG — file read as csv
+2021-07-31 17:35:46,171 — DfHelper — DEBUG — file read as csv
+2021-07-31 17:35:46,209 — DfHelper — DEBUG — file read as csv
+2021-07-31 18:31:23,413 — DfOverview — DEBUG — Loaded successfully!
+2021-07-31 18:31:23,418 — DfCleaner — DEBUG — Loaded successfully!
+2021-07-31 18:31:23,420 — DfOutlier — DEBUG — Loaded successfully!
+2021-07-31 18:31:23,753 — DfHelper — DEBUG — file read as csv
+2021-07-31 18:31:24,336 — DfHelper — DEBUG — file read as csv
+2021-07-31 18:31:24,372 — DfHelper — DEBUG — file read as csv
+2021-07-31 18:32:01,324 — DfHelper — INFO — file saved as csv
+2021-07-31 18:32:11,448 — DfHelper — INFO — file saved as csv
+2021-07-31 18:32:11,848 — DfHelper — INFO — file saved as csv
+2021-07-31 21:31:15,034 — DfCleaner — DEBUG — Loaded successfully!
+2021-07-31 21:31:15,044 — DfOutlier — DEBUG — Loaded successfully!
+2021-07-31 21:45:17,865 — DfCleaner — DEBUG — Loaded successfully!
+2021-07-31 21:45:17,871 — DfOutlier — DEBUG — Loaded successfully!
+2021-07-31 21:45:17,897 — DfOverview — DEBUG — Loaded successfully!
+2021-07-31 21:45:26,049 — DfHelper — DEBUG — file read as csv

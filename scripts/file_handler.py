@@ -1,5 +1,5 @@
 import pickle
-import dvc.api
+# import dvc.api
 import pandas as pd
 from config import Config
 from log import get_logger
@@ -13,15 +13,15 @@ class FileHandler():
   def __init__(self):
     pass
 
-  def get_dvc_file(self, file_path, tag):
-    try:
-      data_url = dvc.api.get_url(path=str(file_path), repo=str(Config.REPO), rev=tag)
-      df = pd.read_csv(data_url, sep=',')
-      my_logger.info("Load data from dvc")
-      return df
+  # def get_dvc_file(self, file_path, tag):
+  #   try:
+  #     data_url = dvc.api.get_url(path=str(file_path), repo=str(Config.REPO), rev=tag)
+  #     df = pd.read_csv(data_url, sep=',')
+  #     my_logger.info("Load data from dvc")
+  #     return df
 
-    except Exception:
-      my_logger.exception("Error loading file from dvc")
+  #   except Exception:
+  #     my_logger.exception("Error loading file from dvc")
 
   def save_csv(self, df, csv_path, index=False):
     try:
@@ -51,7 +51,7 @@ class FileHandler():
 
   def read_model(self, model_name):
     try:
-      name = Config.MODELS_PATH / model_name + ".pkl"
+      name = Config.MODELS_PATH / str(model_name + ".pkl")
       model = pickle.load(open(name, "rb"))
       my_logger.debug("model read as pkl")
       return model

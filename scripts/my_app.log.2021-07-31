@@ -1,0 +1,20 @@
+2021-07-31 19:36:42,244 — DfHelper — ERROR — save failed
+Traceback (most recent call last):
+  File "/Users/ea/Projects/PharmaceuticalSalesPrediction/scripts/file_handler.py", line 45, in save_model
+    name = Config.MODELS_PATH + model_name + time + ".pkl"
+TypeError: unsupported operand type(s) for +: 'PosixPath' and 'str'
+2021-07-31 19:42:18,243 — DfHelper — ERROR — save failed
+Traceback (most recent call last):
+  File "/Users/ea/Projects/PharmaceuticalSalesPrediction/scripts/file_handler.py", line 45, in save_model
+    name = Config.MODELS_PATH / model_name + time + ".pkl"
+TypeError: unsupported operand type(s) for +: 'PosixPath' and 'str'
+2021-07-31 19:59:47,576 — DfHelper — ERROR — save failed
+Traceback (most recent call last):
+  File "/Users/ea/Projects/PharmaceuticalSalesPrediction/scripts/file_handler.py", line 46, in save_model
+    pickle.dump(model, open(str(name), "wb"))
+FileNotFoundError: [Errno 2] No such file or directory: '../models/XGBRegressor2021-07-31-16:59:47.pkl'
+2021-07-31 20:04:39,957 — DfHelper — INFO — file saved as csv
+2021-07-31 20:30:52,817 — DfHelper — INFO — file saved as csv
+2021-07-31 20:46:13,823 — DfHelper — INFO — file saved as csv
+2021-07-31 20:50:08,046 — DfHelper — INFO — file saved as csv
+2021-07-31 21:28:11,018 — DfHelper — INFO — file saved as csv
