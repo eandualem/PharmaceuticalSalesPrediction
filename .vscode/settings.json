@@ -11,6 +11,7 @@
     "hspace",
     "inplace",
     "iterrows",
+    "kaggle",
     "kmeans",
     "numpy",
     "plotly",
