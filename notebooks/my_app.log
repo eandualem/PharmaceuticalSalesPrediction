@@ -74,3 +74,82 @@ FileNotFoundError: [Errno 2] No such file or directory: '../models/XGBRegressor-
 2021-08-01 01:37:40,303 — DfHelper — DEBUG — model read as pkl
 2021-08-01 01:37:40,306 — DfHelper — DEBUG — model read as pkl
 2021-08-01 01:37:40,312 — DfHelper — DEBUG — model read as pkl
+2021-08-01 02:16:42,606 — DfCleaner — DEBUG — Loaded successfully!
+2021-08-01 02:16:42,612 — DfOutlier — DEBUG — Loaded successfully!
+2021-08-01 02:16:42,750 — DfOverview — DEBUG — Loaded successfully!
+2021-08-01 02:16:44,160 — DfHelper — DEBUG — file read as csv
+2021-08-01 02:16:44,247 — DfHelper — DEBUG — file read as csv
+2021-08-01 02:16:44,336 — DfHelper — DEBUG — file read as csv
+2021-08-01 02:16:44,405 — DfHelper — DEBUG — file read as csv
+2021-08-01 02:16:48,914 — DfHelper — DEBUG — model read as pkl
+2021-08-01 02:16:49,358 — DfHelper — DEBUG — model read as pkl
+2021-08-01 02:16:49,432 — DfHelper — DEBUG — model read as pkl
+2021-08-01 02:20:45,050 — DfHelper — DEBUG — model read as pkl
+2021-08-01 02:20:45,172 — DfHelper — DEBUG — model read as pkl
+2021-08-01 02:20:45,201 — DfHelper — DEBUG — model read as pkl
+2021-08-01 08:21:35,317 — DfHelper — DEBUG — file read as csv
+2021-08-01 08:21:35,413 — DfHelper — DEBUG — file read as csv
+2021-08-01 08:21:35,490 — DfHelper — DEBUG — file read as csv
+2021-08-01 08:21:35,563 — DfHelper — DEBUG — file read as csv
+2021-08-01 08:22:47,136 — DfHelper — DEBUG — model read as pkl
+2021-08-01 08:22:47,457 — DfHelper — DEBUG — model read as pkl
+2021-08-01 08:22:47,570 — DfHelper — DEBUG — model read as pkl
+2021-08-01 10:12:11,034 — DfHelper — DEBUG — file read as csv
+2021-08-01 10:12:11,305 — DfHelper — DEBUG — file read as csv
+2021-08-01 10:12:11,377 — DfHelper — DEBUG — file read as csv
+2021-08-01 10:12:11,448 — DfHelper — DEBUG — file read as csv
+2021-08-01 16:57:02,957 — DfHelper — DEBUG — file read as csv
+2021-08-01 16:57:03,370 — DfHelper — DEBUG — file read as csv
+2021-08-01 16:57:03,475 — DfHelper — DEBUG — file read as csv
+2021-08-01 16:57:03,577 — DfHelper — DEBUG — file read as csv
+2021-08-01 16:57:03,609 — DfHelper — DEBUG — file read as csv
+2021-08-01 16:57:03,646 — DfHelper — DEBUG — file read as csv
+2021-08-01 17:30:49,597 — DfHelper — DEBUG — file read as csv
+2021-08-01 17:30:49,878 — DfHelper — DEBUG — file read as csv
+2021-08-01 17:30:49,964 — DfHelper — DEBUG — file read as csv
+2021-08-01 17:30:50,034 — DfHelper — DEBUG — file read as csv
+2021-08-01 17:30:50,052 — DfHelper — DEBUG — file read as csv
+2021-08-01 17:30:50,069 — DfHelper — DEBUG — file read as csv
+2021-08-01 17:32:47,666 — DfHelper — DEBUG — model read as pkl
+2021-08-01 18:00:38,981 — DfHelper — DEBUG — model read as pkl
+2021-08-01 18:01:03,455 — DfHelper — DEBUG — model read as pkl
+2021-08-01 18:02:10,203 — DfHelper — DEBUG — model read as pkl
+2021-08-01 18:03:47,122 — DfHelper — DEBUG — model read as pkl
+2021-08-01 18:04:48,413 — DfHelper — ERROR — model not found
+Traceback (most recent call last):
+  File "/Users/ea/Projects/PharmaceuticalSalesPrediction/scripts/file_handler.py", line 56, in read_model
+    model = pickle.load(open(name, "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: '../models/RandomForestRegressor-sales-2021-07-31-23:05:36.pkl'
+2021-08-01 18:04:48,477 — DfHelper — ERROR — model not found
+Traceback (most recent call last):
+  File "/Users/ea/Projects/PharmaceuticalSalesPrediction/scripts/file_handler.py", line 56, in read_model
+    model = pickle.load(open(name, "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: '../models/XGBRegressor-sales-2021-07-31-23:12:51.pkl'
+2021-08-01 18:04:48,479 — DfHelper — ERROR — model not found
+Traceback (most recent call last):
+  File "/Users/ea/Projects/PharmaceuticalSalesPrediction/scripts/file_handler.py", line 56, in read_model
+    model = pickle.load(open(name, "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: '../models/LGBMRegressor-sales-2021-07-31-23:02:10.pkl'
+2021-08-01 18:05:30,887 — DfHelper — DEBUG — model read as pkl
+2021-08-01 18:30:13,534 — DfHelper — DEBUG — model read as pkl
+2021-08-01 19:18:30,108 — DfHelper — DEBUG — file read as csv
+2021-08-01 19:18:30,443 — DfHelper — DEBUG — file read as csv
+2021-08-01 19:18:30,556 — DfHelper — DEBUG — file read as csv
+2021-08-01 19:18:30,648 — DfHelper — DEBUG — file read as csv
+2021-08-01 19:18:30,669 — DfHelper — DEBUG — file read as csv
+2021-08-01 19:18:30,712 — DfHelper — DEBUG — file read as csv
+2021-08-01 19:19:25,228 — DfHelper — DEBUG — file read as csv
+2021-08-01 19:22:35,102 — DfHelper — DEBUG — file read as csv
+2021-08-01 19:22:35,380 — DfHelper — DEBUG — file read as csv
+2021-08-01 19:22:35,462 — DfHelper — DEBUG — file read as csv
+2021-08-01 19:22:35,528 — DfHelper — DEBUG — file read as csv
+2021-08-01 19:22:35,545 — DfHelper — DEBUG — file read as csv
+2021-08-01 19:22:35,562 — DfHelper — DEBUG — file read as csv
+2021-08-01 19:25:58,575 — DfHelper — DEBUG — file read as csv
+2021-08-01 19:26:18,269 — DfHelper — DEBUG — file read as csv
+2021-08-01 19:35:06,582 — DfHelper — DEBUG — file read as csv
+2021-08-01 19:37:34,705 — DfHelper — DEBUG — file read as csv
+2021-08-01 19:42:31,590 — DfHelper — DEBUG — file read as csv
+2021-08-01 19:43:14,677 — DfHelper — DEBUG — file read as csv
+2021-08-01 19:43:31,833 — DfHelper — DEBUG — file read as csv
+2021-08-01 19:44:06,030 — DfHelper — DEBUG — file read as csv

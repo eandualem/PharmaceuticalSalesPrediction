@@ -40,8 +40,8 @@ class TimeSeriesModel:
 
   def build_model(self):
     model = Sequential()
-    model.add(LSTM(20, input_shape=[None, 1], return_sequences=True))
-    model.add(LSTM(10, input_shape=[None, 1]))
+    model.add(LSTM(32, input_shape=[None, 1], return_sequences=True))
+    model.add(LSTM(16, input_shape=[None, 1]))
     model.add(Dense(1))
     model.compile(loss="huber_loss", optimizer='adam')
     model.summary()
@@ -76,12 +76,12 @@ class TimeSeriesModel:
 
   def save_model(self, model):
     time = strftime("%Y-%m-%d-%H:%M", gmtime())
-    name = Config.MODELS_PATH / str(self.model_name + '-' + time + ".h5")
+    name = Config.MODELS_PATH / str(self.model_name + '-' + time)
     model.save(name)
 
 
 WINDOW_SIZE = 48
-EPOCHS = 10
+EPOCHS = 2000
 
 
 def model(data, model_name):

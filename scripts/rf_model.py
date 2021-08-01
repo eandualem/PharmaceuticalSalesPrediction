@@ -1,15 +1,13 @@
-from config import Config
 from train_model import TrainModel
-from evaluate_model import EvaluateModel
-from file_handler import FileHandler
 from sklearn.ensemble import RandomForestRegressor
-
-file_handler = FileHandler()
-Config.MODELS_PATH.mkdir(parents=True, exist_ok=True)
 
 
 def model():
-  model = RandomForestRegressor(n_jobs=-1, n_estimators=15)
+  model = RandomForestRegressor(n_estimators=200, 
+                                verbose=True, 
+                                max_depth=10, 
+                                min_samples_split=2,
+                                min_samples_leaf=1)
   return model
 
 

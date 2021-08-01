@@ -12,3 +12,4 @@ class Config:
   FEATURES_PATH = ASSETS_PATH / "features"
   MODELS_PATH = ASSETS_PATH / "models"
   METRICS_FILE_PATH = ASSETS_PATH / "metrics"
+  IMAGE_PATH = ASSETS_PATH / "img"

@@ -1,3 +1,4 @@
+import json
 import pickle
 # import dvc.api
 import pandas as pd
@@ -41,7 +42,7 @@ class FileHandler():
 
   def save_model(self, model, model_name):
     try:
-      time = strftime("%Y-%m-%d-%H:%M:%S", gmtime())
+      time = strftime("%Y-%m-%d-%H:%M", gmtime())
       name = Config.MODELS_PATH / str(model_name + "-" + time + ".pkl")
       pickle.dump(model, open(str(name), "wb"))
       my_logger.info("file saved as csv")
@@ -57,3 +58,23 @@ class FileHandler():
       return model
     except FileNotFoundError:
       my_logger.exception("model not found")
+
+  def save_metrics(self, data, file_name):
+    try:
+      time = strftime("%Y-%m-%d-%H:%M", gmtime())
+      name = Config.METRICS_FILE_PATH / str(file_name + "-" + time + ".json")
+      with open(name, 'w') as fp:
+        json.dump(data, fp)
+      my_logger.info("metrics saved as json")
+
+    except Exception:
+      my_logger.exception("metrics save failed")
+
+  def read_metrics(self, file_name):
+    try:
+      name = Config.METRICS_FILE_PATH / str(file_name + ".json")
+      res = json.load(name)
+      my_logger.debug("metrics read as json")
+      return res
+    except FileNotFoundError:
+      my_logger.exception("metrics file not found")

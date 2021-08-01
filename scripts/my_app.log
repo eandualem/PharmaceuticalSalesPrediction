@@ -34,3 +34,89 @@
 2021-08-01 01:51:09,314 — DfHelper — INFO — file saved as csv
 2021-08-01 02:02:10,826 — DfHelper — INFO — file saved as csv
 2021-08-01 02:02:29,616 — DfHelper — INFO — file saved as csv
+2021-08-01 02:05:43,993 — DfHelper — INFO — file saved as csv
+2021-08-01 02:07:18,741 — DfHelper — INFO — file saved as csv
+2021-08-01 02:12:51,952 — DfHelper — INFO — file saved as csv
+2021-08-01 02:14:37,474 — DfHelper — INFO — file saved as csv
+2021-08-01 09:41:10,820 — DfHelper — INFO — file saved as csv
+2021-08-01 09:41:19,220 — DfHelper — INFO — file saved as csv
+2021-08-01 09:41:21,342 — DfHelper — INFO — file saved as csv
+2021-08-01 09:41:26,415 — DfHelper — INFO — file saved as csv
+2021-08-01 09:41:32,600 — DfHelper — INFO — file saved as csv
+2021-08-01 09:41:33,897 — DfHelper — INFO — file saved as csv
+2021-08-01 09:41:35,415 — DfHelper — INFO — file saved as csv
+2021-08-01 10:11:31,375 — DfHelper — INFO — file saved as csv
+2021-08-01 10:11:39,602 — DfHelper — INFO — file saved as csv
+2021-08-01 10:11:41,740 — DfHelper — INFO — file saved as csv
+2021-08-01 10:11:47,364 — DfHelper — INFO — file saved as csv
+2021-08-01 10:11:52,942 — DfHelper — INFO — file saved as csv
+2021-08-01 10:11:54,125 — DfHelper — INFO — file saved as csv
+2021-08-01 10:11:55,353 — DfHelper — INFO — file saved as csv
+2021-08-01 10:51:53,825 — DfHelper — ERROR — metrics save failed
+Traceback (most recent call last):
+  File "/Users/ea/Projects/PharmaceuticalSalesPrediction/scripts/file_handler.py", line 67, in save_metrics
+    saveFile.write(data.to_json())
+AttributeError: 'dict' object has no attribute 'to_json'
+2021-08-01 10:51:54,657 — DfHelper — INFO — file saved as csv
+2021-08-01 10:53:47,186 — DfHelper — ERROR — metrics save failed
+Traceback (most recent call last):
+  File "/Users/ea/Projects/PharmaceuticalSalesPrediction/scripts/file_handler.py", line 67, in save_metrics
+    saveFile.write(data.to_json())
+AttributeError: 'dict' object has no attribute 'to_json'
+2021-08-01 10:53:48,288 — DfHelper — INFO — file saved as csv
+2021-08-01 10:58:58,402 — DfHelper — ERROR — metrics save failed
+Traceback (most recent call last):
+  File "/Users/ea/Projects/PharmaceuticalSalesPrediction/scripts/file_handler.py", line 67, in save_metrics
+    saveFile.write(data.to_json())
+AttributeError: 'dict' object has no attribute 'to_json'
+2021-08-01 10:58:58,439 — DfHelper — INFO — file saved as csv
+2021-08-01 10:59:11,035 — DfHelper — ERROR — metrics save failed
+Traceback (most recent call last):
+  File "/Users/ea/Projects/PharmaceuticalSalesPrediction/scripts/file_handler.py", line 67, in save_metrics
+    saveFile.write(data.to_json())
+AttributeError: 'dict' object has no attribute 'to_json'
+2021-08-01 10:59:11,069 — DfHelper — INFO — file saved as csv
+2021-08-01 11:01:58,790 — DfHelper — INFO — metrics saved as json
+2021-08-01 11:01:58,835 — DfHelper — INFO — file saved as csv
+2021-08-01 11:02:09,500 — DfHelper — INFO — metrics saved as json
+2021-08-01 11:02:09,538 — DfHelper — INFO — file saved as csv
+2021-08-01 11:05:13,874 — DfHelper — INFO — metrics saved as json
+2021-08-01 11:05:14,675 — DfHelper — INFO — file saved as csv
+2021-08-01 11:06:57,994 — DfHelper — INFO — metrics saved as json
+2021-08-01 11:06:58,759 — DfHelper — INFO — file saved as csv
+2021-08-01 11:56:49,438 — DfHelper — INFO — metrics saved as json
+2021-08-01 11:56:49,442 — DfHelper — INFO — file saved as csv
+2021-08-01 11:56:53,223 — DfHelper — INFO — metrics saved as json
+2021-08-01 11:56:53,223 — DfHelper — INFO — file saved as csv
+2021-08-01 12:13:45,793 — DfHelper — INFO — metrics saved as json
+2021-08-01 12:13:45,957 — DfHelper — INFO — file saved as csv
+2021-08-01 12:14:46,637 — DfHelper — INFO — metrics saved as json
+2021-08-01 12:14:46,804 — DfHelper — INFO — file saved as csv
+2021-08-01 14:32:58,997 — DfHelper — DEBUG — file read as csv
+2021-08-01 14:33:35,742 — DfHelper — DEBUG — file read as csv
+2021-08-01 14:34:33,233 — DfHelper — ERROR — save failed
+Traceback (most recent call last):
+  File "/Users/ea/Projects/PharmaceuticalSalesPrediction/scripts/file_handler.py", line 47, in save_model
+    pickle.dump(model, open(str(name), "wb"))
+TypeError: cannot pickle 'weakref' object
+2021-08-01 14:40:10,897 — DfHelper — DEBUG — file read as csv
+2021-08-01 14:46:47,565 — DfHelper — DEBUG — file read as csv
+2021-08-01 15:27:17,998 — DfHelper — DEBUG — file read as csv
+2021-08-01 15:32:26,617 — DfHelper — DEBUG — file read as csv
+2021-08-01 15:56:21,116 — DfHelper — INFO — metrics saved as json
+2021-08-01 15:56:21,321 — DfHelper — INFO — file saved as csv
+2021-08-01 16:07:16,864 — DfHelper — INFO — metrics saved as json
+2021-08-01 16:07:17,109 — DfHelper — INFO — file saved as csv
+2021-08-01 16:12:22,581 — DfHelper — INFO — metrics saved as json
+2021-08-01 16:12:22,641 — DfHelper — INFO — file saved as csv
+2021-08-01 16:12:33,179 — DfHelper — INFO — metrics saved as json
+2021-08-01 16:12:33,221 — DfHelper — INFO — file saved as csv
+2021-08-01 17:23:17,210 — DfHelper — INFO — metrics saved as json
+2021-08-01 17:23:17,213 — DfHelper — INFO — file saved as csv
+2021-08-01 17:23:38,219 — DfHelper — INFO — metrics saved as json
+2021-08-01 17:23:38,221 — DfHelper — INFO — file saved as csv
+2021-08-01 18:26:27,204 — DfHelper — INFO — metrics saved as json
+2021-08-01 18:26:29,412 — DfHelper — INFO — file saved as csv
+2021-08-01 18:28:18,279 — DfHelper — INFO — metrics saved as json
+2021-08-01 18:28:19,094 — DfHelper — INFO — file saved as csv
+2021-08-01 18:41:53,589 — DfHelper — DEBUG — file read as csv

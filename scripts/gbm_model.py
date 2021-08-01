@@ -1,11 +1,5 @@
-from config import Config
 from train_model import TrainModel
-from evaluate_model import EvaluateModel
-from file_handler import FileHandler
 from lightgbm import LGBMRegressor
-
-file_handler = FileHandler()
-Config.MODELS_PATH.mkdir(parents=True, exist_ok=True)
 
 
 def model():
