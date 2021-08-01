@@ -2,6 +2,7 @@
   "cSpell.words": [
     "Andualem",
     "LGBM",
+    "LSTM",
     "bfill",
     "cdist",
     "dtype",
@@ -12,6 +13,7 @@
     "inplace",
     "iterrows",
     "kaggle",
+    "keras",
     "kmeans",
     "numpy",
     "plotly",
