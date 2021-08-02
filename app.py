@@ -2,13 +2,17 @@ import os
 import sys
 import streamlit as st
 sys.path.append(os.path.abspath(os.path.join('./pages')))
-import page1
-import page2
+import home
+import data
+import insights
+import prediction
 
 
 PAGES = {
-  "Home": page1,
-  "Dashboard": page2,
+  "Home": home,
+  "Data": data,
+  "Insights": insights,
+  "Prediction": prediction
 }
 
 selection = st.sidebar.radio("Go to page", list(PAGES.keys()))

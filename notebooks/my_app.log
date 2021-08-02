@@ -168,3 +168,53 @@ FileNotFoundError: [Errno 2] No such file or directory: '../models/LGBMRegressor
 2021-08-02 05:57:13,587 — DfHelper — INFO — file saved as csv
 2021-08-02 05:57:26,719 — DfHelper — INFO — file saved as csv
 2021-08-02 05:57:27,238 — DfHelper — INFO — file saved as csv
+2021-08-02 07:44:35,673 — DfHelper — DEBUG — file read as csv
+2021-08-02 07:44:35,788 — DfHelper — DEBUG — file read as csv
+2021-08-02 07:44:35,901 — DfHelper — DEBUG — file read as csv
+2021-08-02 07:44:35,997 — DfHelper — DEBUG — file read as csv
+2021-08-02 07:44:42,918 — DfHelper — ERROR — model not found
+Traceback (most recent call last):
+  File "/Users/ea/Projects/PharmaceuticalSalesPrediction/scripts/file_handler.py", line 56, in read_model
+    model = pickle.load(open(name, "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: '../models/LGBMRegressor-sales-2021-08-01-19:57.pkl'
+2021-08-02 07:45:24,347 — DfHelper — DEBUG — model read as pkl
+2021-08-02 07:46:24,112 — DfHelper — DEBUG — model read as pkl
+2021-08-02 07:47:55,713 — DfHelper — DEBUG — file read as csv
+2021-08-02 07:56:20,258 — DfHelper — DEBUG — file read as csv
+2021-08-02 08:04:30,224 — DfHelper — DEBUG — file read as csv
+2021-08-02 08:14:20,935 — DfOverview — DEBUG — Loaded successfully!
+2021-08-02 08:14:20,942 — DfCleaner — DEBUG — Loaded successfully!
+2021-08-02 08:14:20,960 — DfOutlier — DEBUG — Loaded successfully!
+2021-08-02 08:14:21,379 — DfHelper — DEBUG — file read as csv
+2021-08-02 08:14:21,894 — DfHelper — DEBUG — file read as csv
+2021-08-02 08:14:21,933 — DfHelper — DEBUG — file read as csv
+2021-08-02 08:15:24,176 — DfHelper — INFO — file saved as csv
+2021-08-02 08:15:34,065 — DfHelper — INFO — file saved as csv
+2021-08-02 08:15:34,462 — DfHelper — INFO — file saved as csv
+2021-08-02 08:16:16,884 — DfHelper — DEBUG — file read as csv
+2021-08-02 08:16:16,983 — DfHelper — DEBUG — file read as csv
+2021-08-02 08:16:17,128 — DfHelper — DEBUG — file read as csv
+2021-08-02 08:16:17,230 — DfHelper — DEBUG — file read as csv
+2021-08-02 08:16:24,969 — DfHelper — DEBUG — model read as pkl
+2021-08-02 08:16:55,925 — DfHelper — DEBUG — file read as csv
+2021-08-02 09:44:46,204 — DfCleaner — DEBUG — Loaded successfully!
+2021-08-02 09:44:46,208 — DfOutlier — DEBUG — Loaded successfully!
+2021-08-02 09:44:46,482 — DfOverview — DEBUG — Loaded successfully!
+2021-08-02 09:44:49,786 — DfHelper — DEBUG — file read as csv
+2021-08-02 09:44:50,385 — DfHelper — DEBUG — file read as csv
+2021-08-02 09:44:50,424 — DfHelper — DEBUG — file read as csv
+2021-08-02 09:45:24,085 — DfCleaner — DEBUG — Loaded successfully!
+2021-08-02 09:45:24,097 — DfOutlier — DEBUG — Loaded successfully!
+2021-08-02 09:45:24,278 — DfOverview — DEBUG — Loaded successfully!
+2021-08-02 09:45:27,195 — DfHelper — DEBUG — file read as csv
+2021-08-02 09:45:28,040 — DfHelper — DEBUG — file read as csv
+2021-08-02 09:45:28,128 — DfHelper — DEBUG — file read as csv
+2021-08-02 09:47:58,512 — DfHelper — DEBUG — file read as csv
+2021-08-02 09:47:59,111 — DfHelper — DEBUG — file read as csv
+2021-08-02 09:47:59,190 — DfHelper — DEBUG — file read as csv
+2021-08-02 09:49:19,185 — DfCleaner — DEBUG — Loaded successfully!
+2021-08-02 09:49:19,198 — DfOutlier — DEBUG — Loaded successfully!
+2021-08-02 09:49:19,343 — DfOverview — DEBUG — Loaded successfully!
+2021-08-02 09:49:19,414 — DfHelper — DEBUG — file read as csv
+2021-08-02 09:49:19,872 — DfHelper — DEBUG — file read as csv
+2021-08-02 09:49:19,900 — DfHelper — DEBUG — file read as csv
