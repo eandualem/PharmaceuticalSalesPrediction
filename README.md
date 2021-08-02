@@ -11,7 +11,7 @@
   - [Features](#features)
   - [Models](#models)
   - [Metrics](#metrics)
-  - [Metrics](#metrics-1)
+  - [Pages](#pages)
   - [Notebooks](#notebooks)
   - [Scripts](#scripts)
   - [Test](#test)
@@ -60,7 +60,7 @@ pip install -r requirements.txt
 ## Metrics
 - Models evaluation metrics are stored inside metrics folder
 
-## Metrics
+## Pages
 - Pages in streamlit app are stored inside pages folder
 
 ## Notebooks
