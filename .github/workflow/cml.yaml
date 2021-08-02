@@ -1,0 +1,26 @@
+name: model-training
+on: [push]
+jobs:
+  run:
+    runs-on: [ubuntu-latest]
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+      - uses: iterative/setup-cml@v1
+      - name: train decision tree model
+        run: |
+          pip install -r requirements.txt
+          cd scripts/
+          python time_series_model.py
+
+      - name: Write CML report
+        env:
+          REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cd img/
+          echo "## Model Training Completed" > report.md
+          echo "### Sales Model" >> report.md
+          cml-publish TimeSeriesModel-Sales.png --md >> report.md
+          echo "### Customers Model" >> report.md
+          cml-publish TimeSeriesModel-Customers.png --md >> report.md
+          cml-send-comment report.md
