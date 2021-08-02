@@ -16,3 +16,6 @@ env
 mlruns/
 *.tmp
 *.csv
+models/RandomForestRegressor*
+models/XGBRegressor*
+models/XGBRegressor*
