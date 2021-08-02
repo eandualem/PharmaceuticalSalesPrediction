@@ -1,4 +1,4 @@
-import mlflow
+# import mlflow   
 import numpy as np
 import tensorflow as tf
 from time import gmtime, strftime
@@ -27,8 +27,8 @@ class TimeSeriesModel:
     DatasetVal = self.windowed_dataset(XValid)
 
     model = self.build_model()
-    mlflow.set_experiment('Tensorflow')
-    mlflow.tensorflow.autolog()
+    # mlflow.set_experiment('Tensorflow')
+    # mlflow.tensorflow.autolog()
     history = model.fit(DatasetTrain, epochs=self.EPOCHS, validation_data=DatasetVal, verbose=1)
     return model, history
 
