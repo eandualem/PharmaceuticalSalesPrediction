@@ -4,13 +4,13 @@ import unittest
 import pandas as pd
 
 sys.path.append(os.path.abspath(os.path.join('../scripts')))
-from df_helper import DfHelper
+from file_handler import FileHandler
 
 
-class TestDfHelper(unittest.TestCase):
+class TestFileHandler(unittest.TestCase):
 
     def setUp(self) -> pd.DataFrame:
-        self.helper = DfHelper()
+        self.helper = FileHandler()
 
     def test_save_csv(self):
         df = pd.DataFrame({'col1': [1, 2, 1], 'col2': [3, 4, 3]})
