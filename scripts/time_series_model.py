@@ -69,8 +69,8 @@ class TimeSeriesModel:
     plt.plot(history.history['loss'], label="loss")
     plt.plot(history.history['val_loss'], label="val_loss")
     plt.legend()
-    time = strftime("%Y-%m-%d-%H:%M", gmtime())
-    name = Config.IMAGE_PATH / str(self.model_name + '-' + time + ".png")
+    # time = strftime("%Y-%m-%d-%H:%M", gmtime())
+    name = Config.IMAGE_PATH / str(self.model_name + ".png")
     plt.savefig(name, dpi=120)
     plt.close()
 
@@ -81,7 +81,7 @@ class TimeSeriesModel:
 
 
 WINDOW_SIZE = 48
-EPOCHS = 2000
+EPOCHS = 100
 
 
 def model(data, model_name):
@@ -90,8 +90,7 @@ def model(data, model_name):
 
 
 file_handler = FileHandler()
-train_df = file_handler.read_csv("../data/train.csv")
-
+train_df = file_handler.read_csv("../pages/train.csv")
 
 sales_data = train_df.groupby("Date").agg({"Sales": "mean"})
 new_model = model(sales_data, "TimeSeriesModel-Sales")
