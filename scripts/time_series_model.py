@@ -81,7 +81,7 @@ class TimeSeriesModel:
 
 
 WINDOW_SIZE = 48
-EPOCHS = 100
+EPOCHS = 10
 
 
 def model(data, model_name):
