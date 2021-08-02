@@ -109,26 +109,16 @@ class CreateFeatures():
     test_data = self.merge(self.test_df, self.store_df)
     test_features = self.extract_features(test_data)
 
-    # we need to create our own test data to validate the model
-    new_train_features = train_features[:int(train_features.shape[0] * 0.8)]
-    new_test_features = train_features[int(train_features.shape[0] * 0.8):]
-
-    train_sales = self.extract_sales(new_train_features)
-    train_customers = self.extract_customers(new_train_features)
-    test_sales = self.extract_sales(new_test_features)
-    test_customers = self.extract_customers(new_test_features)
+    train_sales = self.extract_sales(train_features)
+    train_customers = self.extract_customers(train_features)
 
     test_features.drop(["Store", "Open"], axis=1, inplace=True)
-    new_train_features.drop(["Store", "Open", "Sales", "Customers"], axis=1, inplace=True)
-    new_test_features.drop(["Store", "Open", "Sales", "Customers"], axis=1, inplace=True)
+    train_features.drop(["Store", "Open", "Sales", "Customers"], axis=1, inplace=True)
 
-    self.file_handler.save_csv(test_features, str(Config.FEATURES_PATH / "kaggle_test_features.csv"))
-    self.file_handler.save_csv(new_train_features, str(Config.FEATURES_PATH / "train_features.csv"))
-    self.file_handler.save_csv(new_test_features, str(Config.FEATURES_PATH / "test_features.csv"))
+    self.file_handler.save_csv(test_features, str(Config.FEATURES_PATH / "test_features.csv"))
+    self.file_handler.save_csv(train_features, str(Config.FEATURES_PATH / "train_features.csv"))
     self.file_handler.save_csv(train_sales, str(Config.FEATURES_PATH / "train_sales.csv"))
     self.file_handler.save_csv(train_customers, str(Config.FEATURES_PATH / "train_customers.csv"))
-    self.file_handler.save_csv(test_sales, str(Config.FEATURES_PATH / "test_sales.csv"))
-    self.file_handler.save_csv(test_customers, str(Config.FEATURES_PATH / "test_customers.csv"))
 
 
 cf = CreateFeatures()

@@ -15,7 +15,7 @@ env
 .DS_Store
 mlruns/
 *.tmp
-*.csv
+/data/*.csv
 models/RandomForestRegressor*
 models/XGBRegressor*
 models/XGBRegressor*

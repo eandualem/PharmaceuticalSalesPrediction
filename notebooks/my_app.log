@@ -153,3 +153,18 @@ FileNotFoundError: [Errno 2] No such file or directory: '../models/LGBMRegressor
 2021-08-01 19:43:14,677 — DfHelper — DEBUG — file read as csv
 2021-08-01 19:43:31,833 — DfHelper — DEBUG — file read as csv
 2021-08-01 19:44:06,030 — DfHelper — DEBUG — file read as csv
+2021-08-02 05:54:55,081 — DfOverview — DEBUG — Loaded successfully!
+2021-08-02 05:54:55,093 — DfCleaner — DEBUG — Loaded successfully!
+2021-08-02 05:54:55,098 — DfOutlier — DEBUG — Loaded successfully!
+2021-08-02 05:54:55,613 — DfHelper — DEBUG — file read as csv
+2021-08-02 05:54:56,200 — DfHelper — DEBUG — file read as csv
+2021-08-02 05:54:56,247 — DfHelper — DEBUG — file read as csv
+2021-08-02 05:56:54,766 — DfOverview — DEBUG — Loaded successfully!
+2021-08-02 05:56:54,770 — DfCleaner — DEBUG — Loaded successfully!
+2021-08-02 05:56:54,778 — DfOutlier — DEBUG — Loaded successfully!
+2021-08-02 05:56:55,354 — DfHelper — DEBUG — file read as csv
+2021-08-02 05:56:56,175 — DfHelper — DEBUG — file read as csv
+2021-08-02 05:56:56,221 — DfHelper — DEBUG — file read as csv
+2021-08-02 05:57:13,587 — DfHelper — INFO — file saved as csv
+2021-08-02 05:57:26,719 — DfHelper — INFO — file saved as csv
+2021-08-02 05:57:27,238 — DfHelper — INFO — file saved as csv

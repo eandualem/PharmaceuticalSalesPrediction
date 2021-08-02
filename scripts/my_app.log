@@ -120,3 +120,7 @@ TypeError: cannot pickle 'weakref' object
 2021-08-01 18:28:18,279 — DfHelper — INFO — metrics saved as json
 2021-08-01 18:28:19,094 — DfHelper — INFO — file saved as csv
 2021-08-01 18:41:53,589 — DfHelper — DEBUG — file read as csv
+2021-08-02 05:57:43,200 — DfHelper — INFO — file saved as csv
+2021-08-02 05:57:53,001 — DfHelper — INFO — file saved as csv
+2021-08-02 05:57:59,442 — DfHelper — INFO — file saved as csv
+2021-08-02 05:58:05,915 — DfHelper — INFO — file saved as csv
